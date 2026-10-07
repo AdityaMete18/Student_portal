@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #CDCDCD;
+}
+
+.student-navbar {
+    background-color: #d3d3d3;
+    padding: 22px 24px;
+}
+
+.search-form {
+    width: 100%;
+    gap: 10px;
+}
+
+.search-input {
+    height: 54px;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.search-btn {
+    width: 178px;
+    height: 54px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.Btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Btns button{
+    height: 66px;
+    width: 217px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+.Btns select{
+    height: 66px;
+    width: 217px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #555;
+    padding: 15px;
+    text-align: left;
+}
+
+.student-table th {
+    height: 55px;
+    font-weight: 500;
+}
+
+.student-table td {
+    height: 50px;
+}
+
+.student-table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+

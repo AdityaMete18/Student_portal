@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar student-navbar">
+        <div class="container-fluid">
+
+            <form class="d-flex search-form" role="search">
+
+                <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+
+                <button class="search-btn" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="Btns">
+        <button onclick="sortAZ()">Sort A-Z</button>
+        <button onclick="sortZA()">Sort Z-A</button>
+        <button onclick="sortMark()">Sort By Marks</button>
+        <button onclick="sortPassing()">Sort By Passing</button>
+        <button onclick="sortClass()">Sort By Class</button>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+
+    <table class="student-table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">Gender</th>
+                <th scope="col">CLASS</th>
+                <th scope="col">MARKS</th>
+                <th scope="col">PASSING</th>
+                <th scope="col">EMAIL</th>
+            </tr>
+        </thead>
+        <tbody id="student-body">
+        </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
