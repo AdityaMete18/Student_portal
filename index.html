@@ -18,8 +18,8 @@
 
             <form class="d-flex search-form" role="search">
 
-                <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
-
+                <input class="form-control search-input" type="search" id="searchInput"
+                    placeholder="Search student name" aria-label="Search student name" oninput="searchStudent()">
                 <button class="search-btn" type="submit">
                     Search
                 </button>
@@ -33,9 +33,10 @@
         <button onclick="sortMark()">Sort By Marks</button>
         <button onclick="sortPassing()">Sort By Passing</button>
         <button onclick="sortClass()">Sort By Class</button>
-        <select>
-            <option>Male</option>
-            <option>Female</option>
+        <select id="genderSelect" onchange="filterGender()">
+            <option value="All">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
         </select>
     </div>
 

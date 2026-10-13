@@ -53,14 +53,48 @@ function sortZA() {
 
 function sortMark(){
     newData.sort((a,b)=>
-    a.marks-b.marks
+    b.marks-a.marks
     );
     displayStudent(newData);
 }
 
-function sortPassing(){
+function sortClass(){
     newData.sort((a,b)=>
-    a.passing.localeCompare(b.passing)
+    a.class-b.class
     );
     displayStudent(newData);
+
+}
+
+function sortPassing() {
+    newData.sort((a, b) =>
+        b.passing - a.passing
+    );
+    displayStudent(newData);
+}
+
+function filterGender() {
+    let gender = document.getElementById("genderSelect").value;
+
+    if (gender === "All") {
+        displayStudent(newData);
+    } else {
+        let filteredData = newData.filter(student =>
+            student.gender.toLowerCase() === gender.toLowerCase()
+        );
+
+        displayStudent(filteredData);
+    }
+}
+
+function searchStudent() {
+    let searchValue = document.getElementById("searchInput").value.toLowerCase();
+
+    let filteredData = newData.filter(student =>
+        (student.first_name + " " + student.last_name)
+        .toLowerCase()
+        .includes(searchValue)
+    );
+
+    displayStudent(filteredData);
 }
